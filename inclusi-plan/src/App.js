@@ -1,34 +1,37 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
+import Header from "./components/common/header/Header";
+import Footer from "./components/common/footer/Footer";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from "./components/about/About";
 import CourseHome from "./components/allcourses/CourseHome";
 import Pricing from "./components/pricing/Pricing";
 import Blog from "./components/blog/Blog";
 import Contact from "./components/contact/Contact";
 import Home from "./components/home/Home";
+import Login from "./components/loginSign/login";
 import Signup from "./components/loginSign/signup";
-import Login from "./components/loginSign/login"; // Corrected import for Login
-import Layout from "./components/layout"; 
 
 function App() {
   return (
     <Router>
       <Switch>
-        {/* Separate Routes for Login and Signup */}
-        <Route exact path='/signup' component={Signup} />
-        <Route exact path='/login' component={Login} />
+        {/* Routes for Login and Signup without Header and Footer */}
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/signup" component={Signup} />
 
-        {/* Layout Wrapped Routes */}
-        <Route>
-          <Layout>
-            <Switch>
-              <Route exact path='/' component={Home} />
-              <Route exact path='/about' component={About} />
-              <Route exact path='/courses' component={CourseHome} />
-              <Route exact path='/pricing' component={Pricing} />
-              <Route exact path='/journal' component={Blog} />
-              <Route exact path='/contact' component={Contact} />
-            </Switch>
-          </Layout>
+        {/* Route for Other Pages with Header and Footer */}
+        <Route path="/">
+          <Header />
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/about' component={About} />
+            <Route path='/courses' component={CourseHome} />
+            <Route path='/pricing' component={Pricing} />
+            <Route path='/journal' component={Blog} />
+            <Route path='/contact' component={Contact} />
+            {/* Other routes can be added here */}
+          </Switch>
+          <Footer />
         </Route>
       </Switch>
     </Router>
@@ -36,3 +39,4 @@ function App() {
 }
 
 export default App;
+
