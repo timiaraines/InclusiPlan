@@ -34,7 +34,7 @@ const Footer = () => {
             <h3>Quick Links</h3>
             <ul>
               <li>Contact Us</li>
-              <li>Pricing</li>
+              <li>FAQs</li>
               <li>Terms & Conditions</li>
               <li>Privacy</li>
               <li>Feedbacks</li>
@@ -66,11 +66,11 @@ const Footer = () => {
             <ul>
               <li>
                 <i className='fa fa-map'></i>
-                Address: 345 Harmony Lane, Brightsville, EA 12345
+                Address: 345 Harmony Lane, Monroe, GA 31092
               </li>
               <li>
                 <i className='fa fa-phone-alt'></i>
-                Phone: (555) 678-9012
+                Phone: +1(555) 678-9012
               </li>
               <li>
                 <i className='fa fa-paper-plane'></i>

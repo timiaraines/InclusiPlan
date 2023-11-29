@@ -22,20 +22,22 @@ const Header = () => {
               <Link to='/about'>About</Link>
             </li>
             <li>
-              <Link to='/team'>Team</Link>
-            </li>
-            <li>
-              <Link to='/pricing'>Pricing</Link>
+              <Link to='/pricing'>FAQs</Link>
             </li>
             <li>
               <Link to='/journal'>Journal</Link>
+            </li>
+            <li>
+              <Link to='/iepWriter'>Write IEP</Link>
             </li>
             <li>
               <Link to='/contact'>Contact</Link>
             </li>
           </ul>
           <div className='start'>
+          <Link to='/login'>
             <div className='button'>Login</div>
+            </Link>
           </div>
           <button className='toggle' onClick={() => setClick(!click)}>
             {click ? <i className='fa fa-times'> </i> : <i className='fa fa-bars'></i>}

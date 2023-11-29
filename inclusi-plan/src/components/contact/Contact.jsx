@@ -14,20 +14,20 @@ const Contact = () => {
           </div>
           <div className='right row'>
             <h1>Contact us</h1>
-            <p>We're open for any suggestion or just to have a chat</p>
+            <p>We want to hear from you! Please provide any feedback or questions.</p>
 
             <div className='items grid2'>
               <div className='box'>
                 <h4>ADDRESS:</h4>
-                <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+                <p>345 Harmony Lane, Monroe, GA 31092</p>
               </div>
               <div className='box'>
                 <h4>EMAIL:</h4>
-                <p> info@yoursite.com</p>
+                <p> support@inclusiplan.com</p>
               </div>
               <div className='box'>
                 <h4>PHONE:</h4>
-                <p> + 1235 2355 98</p>
+                <p> +1 (555) 678-9012</p>
               </div>
             </div>
 
